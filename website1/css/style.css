@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: "alpha echo";
+}
+.row-list{
+  width: 100%;
+  margin: 0 auto;
+}
+.main-nav{
+  float: right;
+  list-style: none;
+}
+.main-nav a{
+  display: inline-block;
+  position: relative;
+  top: 5%;
+  list-style: none;
+  font-size: 18pt;
+  color: orange;
+
+}
+.top_header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../assets/steak.png');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.post-content{
+  top: 40%;
+  text-align: center;
+  position: absolute;
+  font-size: 40pt;
+  color: white;
+  margin-left: 10%;
+}
