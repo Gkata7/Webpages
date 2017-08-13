@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Caviar Dreams';
+}
+body{
+  background-color: #DCDCDC;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+li{
+  list-style:none
+}
+a{
+  color: blue;
+  text-decoration: none;
+}
+.top-container{
+  background-color: #00BFFF;
+  width: 100%;
+  height: auto;
+}
+.logo-container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.brightedge-logo{
+  padding: 10px 0;
+  margin-left: 10%;
+}
+.red-title{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.main-content{
+  background-color: #FFFFFF;
+  max-width: 78%;
+  margin: 0 auto;
+  border-left: solid 3px #C6E3F1;
+  border-right: solid 3px #C6E3F1;
+}
+.center-section{
+  flex-direction: row;
+  display: flex;
+}
+.article-container{
+  padding: 0 20px;
+  border-right: 2px solid #DCDCDC;
+}
+.article-title{
+  font-size: 18pt;
+  font-weight: normal;
+}
+.article-paragraph{
+  font-size:  12pt;
+  margin-top: 3%;
+  color: #666;
+}
+.side-content{
+  padding: 0 24px;
+}
+.slot-item{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #DCDCDC;
+}
+.request-demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 130px;
+  background-image: url('../assets/bg_requestdemo.png');
+}
+.request-demo-line{
+  color: grey;
+  font-weight: 100;
+}
+.request-button{
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #F7941D;
+  color: #FFFFFF;
+  margin-top: 10px;
+  width: 135px;
+  padding: 10px;
+}
+.interest-byline{
+  margin-top: 8%;
+  font-weight: 900;
+  font-size: .9em;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.info-img{
+  align-self: flex-start;
+}
+.text-container{
+  margin-left: 10px;
+}
+.info-headline{
+  margin-bottom: 10px;
+  font-size: .8em;
+}
