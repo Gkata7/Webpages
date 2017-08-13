@@ -9,6 +9,10 @@ body{
   width: 100%;
   margin: 0 auto;
 }
+.btn-group{
+  height: 10%;
+  font-size: 14pt;
+}
 .main-nav{
   float: right;
   word-spacing: 2em;
@@ -119,15 +123,146 @@ h3{
   text-align: center;
   color: grey;
 }
-.submission-modal{
-  background-color: white;
-  top: -5%;
-  height: 50%;
-  width: 35%;
-  position: absolute;
-  left: 35%;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+.demo-submission-modal{
+  justify-content: center;
+  background-color: #FFFFFF;
+  position: fixed;
+  border: 2px solid #009DDA;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 800px;
+  padding: 20px;
   display: none;
 }
+.demo-submission-modal.open {
+  display: flex;
+  z-index: 1;
+}
+.open ~ .main-content,
+.open ~ .top-header {
+  /*filter: opacity(.2);*/
+  filter: blur(6px) grayscale(100%);
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #EDEDED;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.full-name-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.full-name-form .first-name {
+  margin-right: 20px;
+}
+
+.demo-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-form-container li {
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #EDEDED;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+.submit-form-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #F7941D;
+  color: #FFFFFF;
+  margin-top: 10px;
+  width: 135px;
+  font-size: 1.1em;
+  padding: 15px 0;
+  align-self: center;
+}
+
+.none {
+  display: none;
+}
+
+@media only screen and (max-width : 945px) {
+  .brightedge-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .center-section {
+    flex-direction: column;
+  }
+
+  .full-name-form {
+    flex-direction: column;
+  }
+
+  .full-name-form .first-name {
+    margin-right: 0;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #EDEDED;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+  }
+
+  .demo-submission-modal.open {
+    height: 60%;
+    overflow: auto;
+    padding-bottom: 0;
+  }
