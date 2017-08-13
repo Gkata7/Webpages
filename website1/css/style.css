@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 body{
@@ -11,8 +11,7 @@ body{
 }
 .main-nav{
   float: right;
-  list-style: none;
-  word-spacing: 2.5em;
+  word-spacing: 2em;
   margin-top: 6%;
 }
 .main-nav a{
@@ -30,10 +29,10 @@ body{
 .top_header{
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../assets/steak.png');
   background-attachment: fixed;
-  width: 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
   height: 90vh;
   background-position: center;
-  background-size: cover;
 }
 .post-content{
   top: 40%;
@@ -43,12 +42,13 @@ body{
   color: white;
   margin-left: 10%;
 }
-.middle-header{
-  margin: 0 auto;
-}
 h1{
   margin-top: 3%;
   text-align: center;
+}
+.middle-header{
+  height: auto;
+  width: 100%;
 }
 .innovative{
   font-style: italic;
@@ -63,7 +63,7 @@ h4{
   color: orange;
 }
 .food-header{
-  margin-top: 20%;
+  margin-top: 15%;
 }
 .meal-list{
   width: 100%;
@@ -73,7 +73,7 @@ h4{
 .meal-list li {
   display: block;
   float: left;
-  padding: 10%;
+  margin-top: 15%;
 }
 .meal-list img{
   overflow: hidden;
@@ -82,28 +82,28 @@ h4{
   margin: 0 auto;
   transform: scale(1.20);
 }
-.review-content{
+.container{
   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../assets/drinks.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   width: 100%;
-  height: 70vh;
+  margin-top: 38%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.container p{
+  color: white;
+  font-size: 12pt;
+  text-align: justify;
+  margin-top: 10%;
+}
+.container img{
+  width: 25%;
+  border-radius: 50%;
 }
 h2{
   text-align: center;
-  margin-top: 40%;
+  margin-top: 5%;
   color: white;
-  font-style: italic;
-}
-.row-comment img{
-  width: 40%;
-  border-radius: 50%;
-}
-blockquote{
-  color: white;
-  margin-top: 20%;
-  position: absolute;
 }
 h3{
   text-align: center;
@@ -121,6 +121,7 @@ h3{
 }
 .submission-modal{
   background-color: white;
+  top: -5%;
   height: 50%;
   width: 35%;
   position: absolute;
