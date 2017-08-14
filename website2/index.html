@@ -13,6 +13,50 @@
     </script>
   </head>
   <body>
+    <!-- ================ Submit Box =================== -->
+    <div class="demo-submit">
+      <div class="confirmation none">
+        <p>Thanks for submitting your form!</p>
+      </div>
+      <form class="demo-form-container" id = "demo-form" method="post">
+        <header class = "modal-header">
+          <h4>Please Fill This Form Out!</h4>
+        </header>
+        <ul>
+          <li class = "full-name-form">
+            <div class="first-name">
+              <label for="first-name">First Name </label>
+              <input class = "name-form" id = "first-name" type="text" name="firstName" value="">
+            </div>
+            <div class="last-name">
+              <label for="last-name">Last Name </label>
+              <input class = "name-form" id= "last-name" type="text" name= "lastName" value="">
+            </div>
+          </li>
+          <li>
+            <label for="email">Email </label>
+            <input id = "email" type="email" name="email" value="">
+          </li>
+          <li>
+            <label for="company">Company </label>
+            <input id = "company" type="text" name="company" value="">
+          </li>
+          <li>
+            <label for="Phone Number">Phone Number </label>
+            <input id = "phone" type="tel" name="phone" value="">
+          </li>
+          <li>
+            <label for="revenue">Revenue </label>
+            <input id = "email" type="email" name="email" value="">
+          </li>
+          <li>
+            <label for="notes">Notes </label>
+            <textarea class = "notes"  name="notes" form = "demo-form"></textarea>
+          </li>
+        </ul>
+        <button class="submit-form-button" type="button">Submit</button>
+      </form>
+    </div>
     <!-- ================= Top Bar ================= -->
     <header class="top-container">
       <div class="logo-container">
@@ -28,7 +72,7 @@
     </div>
 
     <!-- =============== Center Content ================ -->
-    <section class = "center-section">
+  <section class = "center-section">
     <!-- ================ Article Section ============ -->
     <div class="article-container">
       <h2 class = "article-title">Top 20 Recent BrightEdge SEO Innovations</h2>

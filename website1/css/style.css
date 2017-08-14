@@ -229,12 +229,13 @@ textarea {
 }
 
 @media only screen and (max-width : 945px) {
-  .brightedge-logo-container {
-    display: flex;
+  .row h2{
     justify-content: center;
   }
-
-  .center-section {
+  .top_header{
+    flex-direction: column;
+  }
+  .container {
     flex-direction: column;
   }
 
