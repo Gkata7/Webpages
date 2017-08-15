@@ -14,7 +14,7 @@ $documentBody.click(function(e){
   e.preventDefault();
   var $el = $(e.target),
     hasDemoRequestClass = $el.hasClass(CLASS_NAMES.REQUEST_BUTTON);
-    isSubmissionModal = $el.parents('.demo-submit').length || $el.hasClass(CLASS_NAMES.SUBMISSION_MODAL),
+    isDemoSubmit = $el.parents('.demo-submit').length || $el.hasClass(CLASS_NAMES.SUBMISSION_MODAL),
     isSubmitFormButton = $el.hasClass(CLASS_NAMES.SUBMIT_FORM_BUTTON),
     formData = {};
 // If clicked on Demo Button, open the submit form
@@ -33,7 +33,7 @@ $documentBody.click(function(e){
 })
 // Handles Submit functions
 function handleSubmit(){
-  var $demoFormValues = $('.demo-form-container'),
+  var $demoFormValues = $('.demo-form-container input'),
     $additionalNotesValue = $('.notes').val();
 
   $demoFormValues.each(function(item){
@@ -46,7 +46,7 @@ formData['additionalNotes'] = $additionalNotesValue;
 console.log(formData);
 $submissionModal.find('.confirmation').removeClass('none');
 $('.notes').val('');
-#('.demo-form-container').addClass('none');
+$('.demo-form-container').addClass('none');
 }
 
 });

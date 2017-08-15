@@ -129,7 +129,7 @@ a{
 .modal-header{
   text-align: center;
   font-size: 1.5em;
-  margin-bottom: 20%;
+  margin-bottom: 20px;
 }
 .demo-submit.open{
   display: flex;
@@ -137,7 +137,7 @@ a{
 }
 .open ~ .main-content,
 .open ~ .top-header {
-  /*filter: opacity(.2);*/
+  filter: opacity(.2);
   filter: blur(6px) grayscale(100%);
 }
 input{
@@ -179,6 +179,8 @@ label{
   margin-bottom: 20px;
 }
 textarea{
+  resize: none;
+  box-sizing: border-box;
   width: 100%;
   display: block;
   padding: .5rem, .75rem;
@@ -193,13 +195,17 @@ textarea{
 }
 .submit-form-button{
   cursor: pointer;
+  border: none;
   border-radius: 3px;
   background-color: #F7941D;
   color: #FFFFFF;
   width: 130px;
   font-size: 1em;
-  padding: 10px 0;
+  padding: 18px 0;
   align-self: center;
+}
+.none{
+  display: none;
 }
 @media only screen and (max-width : 980px) {
   .brightedge-logo-container {
