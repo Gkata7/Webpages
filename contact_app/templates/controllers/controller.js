@@ -1,17 +1,30 @@
 var myApp = angular.module('myApp', []);
 myApp.controller('contactApp', ['$scope', '$http', function($scope, $http) {
     console.log("Hello World from controller");
-    person1 = {
-      name: "Kobe",
-      email: "kobe@bryant.com",
-      number: "(111)111-1111"
+
+    var refresh = function(){
+    $http.get('/contacts').then(function(response){
+      console.log("Data works?");
+      $scope.contacts = response.data;
+    });
+  };
+
+  refresh();
+
+    $scope.addContact = function(){
+      console.log($scope.contact);
+      $http.post('/contacts', $scope.contact).then(function(response){
+        $scope.contact = "";
+        console.log(response.data);
+        refresh();
+      });
     };
-    person2 = {
-      name: "Steph",
-      email: "steph@curry.com",
-      number: "(222)222-2222"
+
+    $scope.remove = function(id){
+      console.log(id);
+      $http.delete('/contacts/'+ id).then(function(response){
+        refresh();
+      });
     };
-    var contacts = [person1, person2];
-    $scope.contacts = contacts;
 
 }]);
