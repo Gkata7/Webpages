@@ -3,9 +3,11 @@ var app = express();
 var mongojs = require('mongojs');
 var db = mongojs('contacts',['contacts']);
 var bodyParser = require('body-parser');
+var path = require('path');
 
-
+// app.use('/css',express.static(path.join(__dirname, 'public/css')));
 app.use(express.static(__dirname + "/templates"));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 app.get('/contacts', function(req,res){

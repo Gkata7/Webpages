@@ -1,0 +1,26 @@
+body{
+  background-image: url('../images/phone.png');
+  background-repeat: no-repeat;
+  height: auto;
+}
+thead{
+  background-color: white;
+  overflow: visible;
+}
+tbody{
+  background-color: white;
+  overflow: visible;
+}
+h1{
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px {
+ body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+
+}
