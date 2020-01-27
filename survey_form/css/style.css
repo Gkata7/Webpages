@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url('../img/Ny.png');
+  background-repeat: no-repeat;
+}
+.contactForm {
+  background: rgba(0,0,0, .35);
+  padding: 20px;
+  box-shadow: 0px 0px 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+h1{
+  text-align: center;
+}

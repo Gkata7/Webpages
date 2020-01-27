@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family-Roboto:100,300,400,500,700');
+@import "reset";
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #051824;
+}
+header{
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px;
+}
+header .logo{
+  width: 90px;
+}
+header .logo img{
+  width: 100%;
+}
+header nav {
+  align-self: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+/* Top Portion */
+#top-section{
+  position: relative;
+  height: 100vh;
+}
+#top-section .bluredbg {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#top-section .jcole img {
+  width: 100%;
+  border-radius: 20px;
+  filter: contrast(130%);
+}
+#top-section .floating-img{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bio Section */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#bio {
+  background: black;
+  position: relative;
+  z-index: 3;
+  padding: 70px 0;
+}
+#bio .container{
+  display: flex;
+}
+#bio p {
+  width: 50%;
+  color: white;
+  line-height: 1.5;
+  font-size: .9rem;
+  padding: 50px;
+}
+#bio .logo-center {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Video Section */
+#media {
+  background-image: url('../img/j-cole4.png');
+  background-size: cover;
+  padding: 70px 0;
+}
+#media .title{
+  background: black;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#media .videos {
+  padding: 70px 50px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+#media .video {
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+}
+#media iframe {
+  height: 300px;
+}
+
+/* Album Section */
+#album {
+  /* background: linear-gradient(45deg, rgba(5,24,36,1) 0%,rgba(14,58,80,1) 35%,rgba(21,85,114,0.58) 62%,rgba(125,185,232,0) 100%); */
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  filter: blur(50px) saturate(130px);
+  padding: 60px 0;
+}
+#album .container {
+  display: flex;
+  padding: 0 40px;
+  position: relative;
+  z-index: 3;
+}
+#album .album-cover {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#album .logo img{
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+}
+#album img {
+  width: 100%;
+}
+
+/* Tour Dates Section */
+#tour {
+  background: black;
+}
+#tour .top-image{
+  background-image: url('../img/group.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 350px;
+  filter: saturate(0%) contrast(120%);
+}
+#tour .tour-dates {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+#tour .title {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0 0 50px;
+}
+#tour .dates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+}
+#tour .dates li {
+  color: white;
+  list-style: none;
+  font-size: 1.3rem;
+}
+#tour .dates li span {
+  padding: 0 10px;
+}
+#tour .dates li .city{
+  font-weight: 700;
+}
+#tour .dates li .location{
+  font-weight: 200;
+  font-size: 1rem;
+}
+#tour .dates li .date{
+  font-weight: 500;
+  color: #f14848
+}
+
+/* Footer */
+#tour footer {
+  background: #1b1b1b;
+  position: relative;
+  z-index: 4;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+#tour footer img{
+  max-width: 70px;
+  padding: 5px;
+}
+#tour footer a{
+  color: #ADD8E6;
+  text-decoration: none;
+}

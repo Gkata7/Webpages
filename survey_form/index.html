@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="survey_form, forms">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Survey Form</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+
+  <div class="container-fluid">
+    <h1 id="title">Contact Form</h1>
+    <form class="form_name" id="form_id" method="post">
+      <div class="col-md-6 contactForm">
+        <div class="form-group">
+          <label class ="first_name" id ="first-Name">First name</label>
+          <input type="text" class ="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class ="last_name" id ="last-Name">Last name</label>
+          <input type="text" class ="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class ="age" id ="person_age">Age</label>
+          <input type="number" min="1" max ="100" class ="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class ="descriptionRole" id ="role-fit">What Best Describes Your Role?
+            <select class="form-control" required>
+              <option selected>Choose..</option>
+              <option>Full-Time Role</option>
+              <option>Part-Time Role</option>
+              <option>Student</option>
+              <option>Freelancer</option>
+            </select>
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="submit_by_class()">Submit</button>
+      </div>
+    </form>
+  </div>
+
+    <script type="text/javascript" src ="js/script.js"></script>
+  </body>
+</html>
